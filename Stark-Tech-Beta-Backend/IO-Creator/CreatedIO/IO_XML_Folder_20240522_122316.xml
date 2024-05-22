@@ -1,0 +1,395 @@
+<ObjectSet ExportMode="Special" Note="TypesFirst" SemanticsFilter="Special" Version="5.0.3.117">
+  <MetaInformation>
+    <ExportMode Value="Special" />
+    <SemanticsFilter Value="None" />
+    <RuntimeVersion Value="5.0.3.117" />
+    <SourceVersion Value="5.0.3.117" />
+    <ServerFullPath Value="/Typical" />
+  </MetaInformation>
+  <Types>
+      <PropertyType Name="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" DisplayName="Custom enumeration" Description="Custom enumeration" Base="system.pt.Boolean" RegExp=".*" Translate="1" EnumType="Strict" Icon="" Abstract="0">
+                 <Enum Name="Normal" Value="0" />
+                 <Enum Name="Alarm" Value="1" />
+      </PropertyType>
+      <PropertyType Name="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" DisplayName="Custom enumeration" Description="Custom enumeration" Base="system.pt.Boolean" RegExp=".*" Translate="1" EnumType="Strict" Icon="" Abstract="0">
+                 <Enum Name="Off" Value="0" />
+                 <Enum Name="On" Value="1" />
+      </PropertyType>
+  </Types>
+  <ExportedObjects>
+    <OI NAME="IO" TYPE="system.base.Folder">
+      <PI Name="ContentType">
+        <Reference DeltaFilter="0" Locked="1" Object="~/System/Content Types/BACnet IO" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="UseContentTypeFromRule" Value="0" />
+    <OI DESCR="Temperture Derived Analog Input 0" NAME="HcoilSaTmp" TYPE="bacnet.mpx.point.TemperatureInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="HcoilSaTmp" />
+        <PI Name="COVIncrement" Unit="0x280003" Value="1" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,      20&gt;" />
+        <PI Name="MaxPresValue" Unit="0x280003" Value="0" />
+        <PI Name="MinPresValue" Unit="0x280003" Value="0" />
+        <PI Name="Offset" Unit="0x280003" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 1" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="ThermistorType" Value="7" />
+        <PI Name="Value" Unit="0x280003" />
+        </OI><OI DESCR="Temperture Derived Analog Input 0" NAME="CcoilSaTmp" TYPE="bacnet.mpx.point.TemperatureInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="CcoilSaTmp" />
+        <PI Name="COVIncrement" Unit="0x280003" Value="1" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,      20&gt;" />
+        <PI Name="MaxPresValue" Unit="0x280003" Value="0" />
+        <PI Name="MinPresValue" Unit="0x280003" Value="0" />
+        <PI Name="Offset" Unit="0x280003" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 2" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="ThermistorType" Value="7" />
+        <PI Name="Value" Unit="0x280003" />
+        </OI><OI DESCR="Temperture Derived Analog Input 0" NAME="MaTmp" TYPE="bacnet.mpx.point.TemperatureInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="MaTmp" />
+        <PI Name="COVIncrement" Unit="0x280003" Value="1" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,      20&gt;" />
+        <PI Name="MaxPresValue" Unit="0x280003" Value="0" />
+        <PI Name="MinPresValue" Unit="0x280003" Value="0" />
+        <PI Name="Offset" Unit="0x280003" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 3" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="ThermistorType" Value="7" />
+        <PI Name="Value" Unit="0x280003" />
+        </OI><OI DESCR="Temperture Derived Analog Input 0" NAME="DaTmp" TYPE="bacnet.mpx.point.TemperatureInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="DaTmp" />
+        <PI Name="COVIncrement" Unit="0x280003" Value="1" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,      20&gt;" />
+        <PI Name="MaxPresValue" Unit="0x280003" Value="0" />
+        <PI Name="MinPresValue" Unit="0x280003" Value="0" />
+        <PI Name="Offset" Unit="0x280003" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 4" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="ThermistorType" Value="7" />
+        <PI Name="Value" Unit="0x280003" />
+        </OI><OI DESCR="DigitalInput 0 BpiAlm" NAME="BpiAlm" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ALARM" />
+      <PI Name="BACnetName" Value="BpiAlm (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="NORMAL" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 6" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI><OI DESCR="Voltage Derived Analog Output 0" NAME="ChwVlvSig" TYPE="bacnet.mpx.point.VoltageOutput" flags="libExcluded">
+      <PI Name="BACnetName" Value="ChwVlvSig" />
+      <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+      <PI Name="ElecBottomOfScale" Value="2" />
+      <PI Name="ElecTopOfScale" Value="10" />
+      <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+      <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+      <PI Name="ForeignAddress" Value="&lt;analog-output,     628&gt;" />
+      <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+      <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+      <PI Name="Priority10" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/ChwVlvSigCtrl" Property="ChwVlvSig_p10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 7" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Unit="0x200001" />
+    </OI><OI DESCR="Voltage Derived Analog Input 0" NAME="ChwVlvFbk" TYPE="bacnet.mpx.point.VoltageInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="ChwVlvFbk" />
+        <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+        <PI Name="ElecTopOfScale" Value="10" />
+        <PI Name="ElecBottomOfScale" Value="2" />
+        <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+        <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,     625&gt;" />
+        <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+        <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+        <PI Name="Offset" Unit="0x200001" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 8" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="Value" Unit="0x200001" />
+        </OI><OI DESCR="Voltage Derived Analog Output 0" NAME="SaFan1Spd" TYPE="bacnet.mpx.point.VoltageOutput" flags="libExcluded">
+      <PI Name="BACnetName" Value="SaFan1Spd" />
+      <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+      <PI Name="ElecBottomOfScale" Value="0" />
+      <PI Name="ElecTopOfScale" Value="10" />
+      <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+      <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+      <PI Name="ForeignAddress" Value="&lt;analog-output,     628&gt;" />
+      <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+      <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+      <PI Name="Priority10" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/SaFan1SpdCtrl" Property="SaFan1Spd_p10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 9" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Unit="0x200001" />
+    </OI><OI DESCR="Voltage Derived Analog Input 0" NAME="OaFl" TYPE="bacnet.mpx.point.VoltageInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="OaFl" />
+        <PI Name="COVIncrement" Unit="0xF0004" Value="1" />
+        <PI Name="ElecTopOfScale" Value="10" />
+        <PI Name="ElecBottomOfScale" Value="0" />
+        <PI Name="EngBottomOfScale" Unit="0xF0004" Value="0" />
+        <PI Name="EngTopOfScale" Unit="0xF0004" Value="5000" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,     625&gt;" />
+        <PI Name="MaxPresValue" Unit="0xF0004" Value="0" />
+        <PI Name="MinPresValue" Unit="0xF0004" Value="0" />
+        <PI Name="Offset" Unit="0xF0004" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 10" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="Value" Unit="0xF0004" />
+        </OI><OI DESCR="DigitalInput 0 Ef1-4FanSts" NAME="Ef1-4FanSts" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="Ef1-4FanSts (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 11" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI><OI DESCR="Voltage Derived Analog Output 0" NAME="OaDprSig" TYPE="bacnet.mpx.point.VoltageOutput" flags="libExcluded">
+      <PI Name="BACnetName" Value="OaDprSig" />
+      <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+      <PI Name="ElecBottomOfScale" Value="2" />
+      <PI Name="ElecTopOfScale" Value="10" />
+      <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+      <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+      <PI Name="ForeignAddress" Value="&lt;analog-output,     628&gt;" />
+      <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+      <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+      <PI Name="Priority10" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/OaDprSigCtrl" Property="OaDprSig_p10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 12" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Unit="0x200001" />
+    </OI><OI DESCR="Voltage Derived Analog Input 0" NAME="OaDprFbk" TYPE="bacnet.mpx.point.VoltageInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="OaDprFbk" />
+        <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+        <PI Name="ElecTopOfScale" Value="10" />
+        <PI Name="ElecBottomOfScale" Value="2" />
+        <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+        <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,     625&gt;" />
+        <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+        <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+        <PI Name="Offset" Unit="0x200001" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 13" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="Value" Unit="0x200001" />
+        </OI><OI DESCR="Voltage Derived Analog Output 0" NAME="RaDprSig" TYPE="bacnet.mpx.point.VoltageOutput" flags="libExcluded">
+      <PI Name="BACnetName" Value="RaDprSig" />
+      <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+      <PI Name="ElecBottomOfScale" Value="2" />
+      <PI Name="ElecTopOfScale" Value="10" />
+      <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+      <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+      <PI Name="ForeignAddress" Value="&lt;analog-output,     628&gt;" />
+      <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+      <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+      <PI Name="Priority10" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/RaDprSigCtrl" Property="RaDprSig_p10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 14" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Unit="0x200001" />
+    </OI><OI DESCR="Voltage Derived Analog Input 0" NAME="RaDprFbk" TYPE="bacnet.mpx.point.VoltageInput" flags="libExcluded">
+        <PI Name="BACnetName" Value="RaDprFbk" />
+        <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+        <PI Name="ElecTopOfScale" Value="10" />
+        <PI Name="ElecBottomOfScale" Value="2" />
+        <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+        <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+        <PI Name="ForeignAddress" Value="&lt;analog-input,     625&gt;" />
+        <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+        <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+        <PI Name="Offset" Unit="0x200001" Value="0" />
+        <PI Name="Terminal">
+            <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 15" Retransmit="0" TransferRate="10" />
+        </PI>
+        <PI Name="Value" Unit="0x200001" />
+        </OI><OI DESCR="Voltage Derived Analog Output 0" NAME="HtgSig" TYPE="bacnet.mpx.point.VoltageOutput" flags="libExcluded">
+      <PI Name="BACnetName" Value="HtgSig" />
+      <PI Name="COVIncrement" Unit="0x200001" Value="1" />
+      <PI Name="ElecBottomOfScale" Value="0" />
+      <PI Name="ElecTopOfScale" Value="10" />
+      <PI Name="EngBottomOfScale" Unit="0x200001" Value="0" />
+      <PI Name="EngTopOfScale" Unit="0x200001" Value="100" />
+      <PI Name="ForeignAddress" Value="&lt;analog-output,     628&gt;" />
+      <PI Name="MaxPresValue" Unit="0x200001" Value="0" />
+      <PI Name="MinPresValue" Unit="0x200001" Value="0" />
+      <PI Name="Priority10" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/HtgSigCtrl" Property="HtgSig_p10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Ub 16" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Unit="0x200001" />
+    </OI><OI DESCR="DigitalInput 0 SaFanSts" NAME="SaFanSts" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="SaFanSts (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Uc 1" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI><OI DESCR="DigitalInput 0 SaHiStPrLmtSw" NAME="SaHiStPrLmtSw" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ALARM" />
+      <PI Name="BACnetName" Value="SaHiStPrLmtSw (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="NORMAL" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Uc 2" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI><OI DESCR="DigitalInput 0 SaLoStPrLmtSw" NAME="SaLoStPrLmtSw" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ALARM" />
+      <PI Name="BACnetName" Value="SaLoStPrLmtSw (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="NORMAL" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Uc 3" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI><OI DESCR="DigitalInput 0 LLSts" NAME="LLSts" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ALARM" />
+      <PI Name="BACnetName" Value="LLSts (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="NORMAL" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Uc 4" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI><OI DESCR="Digital Output SaFanCmdnb0" NAME="SaFanCmd" TYPE="bacnet.mpx.point.DigitalOutput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="SaFanCmd" />
+      <PI Name="ForeignAddress" Value="&lt;binary-output,     290&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Priority1" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority10" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/SaFanCmdControl" Property="SaFanCmd_P10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Priority11" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority12" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority13" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority14" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority15" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority16" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority2" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority3" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority4" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority5" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority6" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority7" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority8" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority9" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="RelinquishDefault" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/DO 2" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+    </OI><OI DESCR="Digital Output IonBarCmdnb0" NAME="IonBarCmd" TYPE="bacnet.mpx.point.DigitalOutput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="IonBarCmd" />
+      <PI Name="ForeignAddress" Value="&lt;binary-output,     290&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Priority1" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority10" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/IonBarCmdControl" Property="IonBarCmd_P10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Priority11" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority12" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority13" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority14" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority15" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority16" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority2" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority3" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority4" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority5" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority6" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority7" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority8" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority9" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="RelinquishDefault" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/DO 2" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+    </OI><OI DESCR="Digital Output Ef1-4FanCmdnb0" NAME="Ef1-4FanCmd" TYPE="bacnet.mpx.point.DigitalOutput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="Ef1-4FanCmd" />
+      <PI Name="ForeignAddress" Value="&lt;binary-output,     290&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Priority1" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority10" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/Ef1-4FanCmdControl" Property="Ef1-4FanCmd_P10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Priority11" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority12" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority13" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority14" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority15" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority16" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority2" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority3" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority4" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority5" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority6" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority7" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority8" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority9" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="RelinquishDefault" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/DO 2" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+    </OI><OI DESCR="Digital Output SaFan1Cmdnb0" NAME="SaFan1Cmd" TYPE="bacnet.mpx.point.DigitalOutput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="SaFan1Cmd" />
+      <PI Name="ForeignAddress" Value="&lt;binary-output,     290&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Priority1" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority10" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" VariableReference="Application">
+        <Reference DeltaFilter="0" Object="../../../Programs/SaFan1CmdControl" Property="SaFan1Cmd_P10" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Priority11" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority12" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority13" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority14" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority15" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority16" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority2" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority3" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority4" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority5" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority6" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority7" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority8" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Priority9" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="RelinquishDefault" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/DO 2" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaic256pscofocffvw36g7ybz.aaaic256pscofocffvwyaoqpds" />
+    </OI><OI DESCR="DigitalInput 0 SaFan1Sts" NAME="SaFan1Sts" TYPE="bacnet.mpx.point.DigitalInput" flags="libExcluded">
+      <PI Name="ActiveText" Value="ON" />
+      <PI Name="BACnetName" Value="SaFan1Sts (Input)" />
+      <PI Name="ForeignAddress" Value="&lt;binary-input,     621&gt;" />
+      <PI Name="InactiveText" Value="OFF" />
+      <PI Name="Terminal">
+        <Reference DeltaFilter="0" Object="../../../../IO Resources/Onboard IO/Uc 1" Retransmit="0" TransferRate="10" />
+      </PI>
+      <PI Name="Value" Type="udt.enum.aaaif6v63pob7ocsujg6mccqyx.aaaif6v63pob7ocsujg4ao466p" />
+    </OI></OI>
+  </ExportedObjects>
+</ObjectSet>

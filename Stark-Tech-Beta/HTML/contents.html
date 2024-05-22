@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Tech</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body >
+    
+    <nav>
+        <li class="navicon"></li>
+        <ul>
+            <li><a href="home.html">Login</a></li>
+            <li><a href="contents.html">Table Of Contents</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+         
+        </ul>
+    </nav>
+    <div id="loginbody">
+        <div id="contentdiv">
+            <Div><div id="contentdivtext"><span>Go to VaV Replicator</span></div><div id="contentdivbutton"><button id="myButton">Replicate</button></div></Div>
+            <Div><div id="contentdivtext"><span>Go to IO Creator</span></div><div id="contentdivbutton"><button id="gobutton">Create</button></div></Div>
+    
+</div>
+</div>
+    <script>
+        document.getElementById('myButton').addEventListener('click', () => {
+            // Handle button click
+            window.location.href = 'VaV.html';
+        });
+        document.getElementById('gobutton').addEventListener('click', () => {
+            // Handle button click
+            window.location.href = 'IO.html';
+        });
+    </script>
+</body>
+</html>

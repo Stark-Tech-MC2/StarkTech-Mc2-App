@@ -1,0 +1,47 @@
+﻿PageName,ShapeType,SystemName,PartNumber,BomTag,DeviceBomTag,Connection,PointBomTag,PointSoftwareTag,DeviceRow,ControllerRow,DeviceShapeID,DevicePageID,ConnectionType,PointType,SignalType,EngRangeLow,EngRangeHigh,EngRangeUnits,EngTrueText,EngFalseText,Panel,Location
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub1,TS-1,HcoilSaTmp,System.Data.DataRow,,429,4,UIAO,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,°F,,,Panel,Location
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub2,TS-3,CcoilSaTmp,System.Data.DataRow,,954,4,UIAO,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,°F,,,Panel,Location
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub3,TS-4,MaTmp,System.Data.DataRow,,997,4,UIAO,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,°F,,,Panel,Location
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub4,TS-2,DaTmp,System.Data.DataRow,,1747,4,UIAO,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,°F,,,Panel,Location
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub5,,,,,-1,-1,UIAO,,,0,0,,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub6,BPI-1,BpiAlm,System.Data.DataRow,,1610,4,UIAO,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub7,CV-xx,ChwVlvSig,System.Data.DataRow,,1786,5,UIAO,AO,2-10 VDC,0,100,%open,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub8,CV-xx,ChwVlvFbk,System.Data.DataRow,,1798,5,UIAO,AI,2-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub9,SF-1 VFD,SaFan1Spd,System.Data.DataRow,,2012,5,UIAO,AO,0-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub10,OA AFMS,OaFl,System.Data.DataRow,,1124,4,UIAO,AI,0-10 VDC,0,5000,FPM,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub11,EF 1-4,Ef1-4FanSts,System.Data.DataRow,,3951,6,UIAO,DI,Digital In (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub12,OA DM,OaDprSig,System.Data.DataRow,,1659,5,UIAO,AO,2-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub13,OA DM,OaDprFbk,System.Data.DataRow,,1694,5,UIAO,AI,2-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub14,RA DM,RaDprSig,System.Data.DataRow,,1671,5,UIAO,AO,2-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub15,RA DM,RaDprFbk,System.Data.DataRow,,1685,5,UIAO,AI,2-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Ub16,EDH-1,HtgSig,System.Data.DataRow,,366,4,UIAO,AO,0-10 VDC,0,100,%,,,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Uc1,CS-1,SaFanSts,System.Data.DataRow,,1192,5,UIAO,DI,Digital In (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Uc2,PSH-01,SaHiStPrLmtSw,System.Data.DataRow,,3118,5,UIAO,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Uc3,PSL-01,SaLoStPrLmtSw,System.Data.DataRow,,3106,5,UIAO,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,Uc4,LL-1,LLSts,System.Data.DataRow,,3092,5,UIAO,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,DO1,SF VFD,SaFanCmd,System.Data.DataRow,,2091,5,DO,DO,Digital Out (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,DO2,BPI,IonBarCmd,System.Data.DataRow,,1639,4,DO,DO,Digital Out (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,DO3,EF 1-4,Ef1-4FanCmd,System.Data.DataRow,,3963,6,DO,DO,Digital Out (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Controls,Controller,AHU 1-2,SXWMPC24A10001,,AHU-1-2 CNT,DO4,,,,,-1,-1,DO,,,0,0,,,,,
+AHU 1-2 Controls,I/O Point,Kitchen Systems,,,EF 1-4,Ub11,AHU-1-2 CNT,Ef1-4FanSts,,,-1,-1,,DI,Digital In (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Controls,I/O Point,Kitchen Systems,,,EF 1-4,DO3,AHU-1-2 CNT,Ef1-4FanCmd,,,-1,-1,,DO,Digital Out (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Details,I/O Point,AHU 1-2,,,LL-1,Uc4,AHU-1-2 CNT,LLSts,,,-1,-1,,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Details,I/O Point,AHU 1-2,,,PSH-01,Uc2,AHU-1-2 CNT,SaHiStPrLmtSw,,,-1,-1,,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Details,I/O Point,AHU 1-2,,,PSL-01,Uc3,AHU-1-2 CNT,SaLoStPrLmtSw,,,-1,-1,,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Details,I/O Point,AHU 1-2,,,SF-1 VFD,Ub9,AHU-1-2 CNT,SaFan1Spd,,,-1,-1,,AO,0-10 VDC,0,100,%,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,,,SF-1 VFD,DO1,AHU-1-2 CNT,SaFan1Cmd,,,-1,-1,,DO,Digital Out (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Details,I/O Point,AHU 1-2,BEL-AKRX-E,,CV-xx,Ub7,AHU-1-2 CNT,ChwVlvSig,,,-1,-1,,AO,2-10 VDC,0,100,%open,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,BEL-AKRX-E,,CV-xx,Ub8,AHU-1-2 CNT,ChwVlvFbk,,,-1,-1,,AI,2-10 VDC,0,100,%,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,BEL-NFB24-SR,,OA DM,Ub12,AHU-1-2 CNT,OaDprSig,,,-1,-1,,AO,2-10 VDC,0,100,%,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,BEL-NFB24-SR,,OA DM,Ub13,AHU-1-2 CNT,OaDprFbk,,,-1,-1,,AI,2-10 VDC,0,100,%,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,BEL-NFB24-SR,,RA DM,Ub14,AHU-1-2 CNT,RaDprSig,,,-1,-1,,AO,2-10 VDC,0,100,%,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,BEL-NFB24-SR,,RA DM,Ub15,AHU-1-2 CNT,RaDprFbk,,,-1,-1,,AI,2-10 VDC,0,100,%,,,,
+AHU 1-2 Details,I/O Point,AHU 1-2,H608,,CS-1,Uc1,AHU-1-2 CNT,SaFan1Sts,,,-1,-1,,DI,Digital In (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Schematic,I/O Point,AHU 1-2,,,BPI,DO2,AHU-1-2 CNT,IonBarCmd,,,-1,-1,,DO,Digital Out (SPST NO),0,0,,ON,OFF,,
+AHU 1-2 Schematic,I/O Point,AHU 1-2,,,BPI-1,Ub6,AHU-1-2 CNT,BpiAlm,,,-1,-1,,DI,Digital In (SPST NO),0,0,,ALARM,NORMAL,,
+AHU 1-2 Schematic,I/O Point,AHU 1-2,,,EDH-1,Ub16,AHU-1-2 CNT,HtgSig,,,-1,-1,,AO,0-10 VDC,0,100,%,,,,
+AHU 1-2 Schematic,I/O Point,AHU 1-2,,,OA AFMS,Ub10,AHU-1-2 CNT,OaFl,,,-1,-1,,AI,0-10 VDC,0,5000,FPM,,,,
+AHU 1-2 Schematic,Sensor,AHU 1-2,A/AN-BC-A-24'-PB,,TS-3,Ub2,AHU-1-2 CNT,CcoilSaTmp,,,-1,-1,,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,,,,Panel,Location
+AHU 1-2 Schematic,Sensor,AHU 1-2,A/AN-BC-A-24'-PB,,TS-4,Ub3,AHU-1-2 CNT,MaTmp,,,-1,-1,,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,,,,Panel,Location
+AHU 1-2 Schematic,Sensor,AHU 1-2,"A/AN-BC-D-12""-PB",,TS-1,Ub1,AHU-1-2 CNT,HcoilSaTmp,,,-1,-1,,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,,,,Panel,Location
+AHU 1-2 Schematic,Sensor,AHU 1-2,"A/AN-BC-D-12""-PB",,TS-2,Ub4,AHU-1-2 CNT,DaTmp,,,-1,-1,,AI,10K Thermistor (Curve 3) w/11K Shunt,0,0,,,,Panel,Location
