@@ -20,7 +20,7 @@ function createWindow() {
       autoHideMenuBar: true,
     }
   });
-  mainWindow.setMenuBarVisibility(false)
+  //mainWindow.setMenuBarVisibility(false)
   const basePath = path.resolve(__dirname, '../../Stark-Tech-Beta/HTML');
     
     const directoryPaths = path.join(basePath, 'home.html')
@@ -81,19 +81,25 @@ function print(Spreadsheet, CoolingOnlyVAV, SCRVAV, StagedVaV) {
 ipcMain.on('trigger-python-code', async () => {
   if (Spreadsheet && CoolingOnlyVAV && SCRVAV && StagedVaV) {
     try {
+      // Send message to start loading
+      mainWindow.webContents.send('start-loading');
+
       const dataToSend = JSON.stringify({ SCRVAV, CoolingOnlyVAV, Spreadsheet, StagedVaV });
       const information = await jstoXml(dataToSend);
-      //console.log(information); // Log the information received from Python
-      // Inside your trigger-python-code handler
-if (mainWindow && !mainWindow.isDestroyed() && mainWindow.webContents) {
-  console.log('Sending information to renderer process:', information);
-  mainWindow.webContents.send('data-from-main', information);
-} else {
-  console.error('Error: Unable to send data to mainWindow');
-}
+
+      // Send processed data to renderer process
+      if (mainWindow && !mainWindow.isDestroyed() && mainWindow.webContents) {
+        console.log('Sending information to renderer process:', information);
+        mainWindow.webContents.send('data-from-main', information);
+      } else {
+        console.error('Error: Unable to send data to mainWindow');
+      }
 
     } catch (error) {
       console.error('Error:', error);
+    } finally {
+      // Send message to stop loading
+      mainWindow.webContents.send('stop-loading');
     }
   } else {
     alert.apply("select a option")
@@ -101,14 +107,18 @@ if (mainWindow && !mainWindow.isDestroyed() && mainWindow.webContents) {
   }
 });
 
+
 ipcMain.on('trigger2-python2-code2', async () => {
-  console.log('here')
+  console.log('here');
   if (iospreadsheet) {
     try {
-      
+      // Send message to start loading
+      mainWindow.webContents.send('start-loading');
+
       const information2 = await jstoIO(iospreadsheet);
       console.log(information2); // Log the information received from Python
 
+      // Send processed data to renderer process
       if (mainWindow && !mainWindow.isDestroyed() && mainWindow.webContents) {
         console.log('Sending information to renderer process:', information2);
         mainWindow.webContents.send('data2-from2-main2', information2);
@@ -117,9 +127,16 @@ ipcMain.on('trigger2-python2-code2', async () => {
       }
     } catch (error) {
       console.error('Error:', error);
+    } finally {
+      // Send message to stop loading
+      mainWindow.webContents.send('stop-loading');
     }
+  } else {
+    alert.apply("select a option");
+    console.log('No file selected.');
   }
 });
+
 
 
 

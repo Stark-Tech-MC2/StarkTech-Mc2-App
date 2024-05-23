@@ -154,7 +154,16 @@ if (lastBackslashMatch) {
 
     document.getElementById('radioGroups2').appendChild(groupDiv);
 }
-
+// Add event listener to show loading element when processing starts
+ipcRenderer.on('start-loading', () => {
+    document.getElementById('loading-element').style.display = 'block';
+  });
+  
+  // Add event listener to hide loading element when processing stops
+  ipcRenderer.on('stop-loading', () => {
+    document.getElementById('loading-element').style.display = 'none';
+  });
+  
 
 ipcRenderer.on('data-from-main', (event, information) => {
   console.log('Received information from main process:', information);

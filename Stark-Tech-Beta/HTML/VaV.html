@@ -3,46 +3,51 @@
 <head>
   <title>VAV Replicator</title>
   <link rel="stylesheet" href="styles/styles.css">
+  
 </head>
 
-<body >
+<body>
   <nav>
     <li class="navicon"></li>
     <ul>
       <li><a href="home.html">Login</a></li>
       <li><a href="contents.html">Table Of Contents</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
     </ul>
   </nav>
+  
   <div id="VaVBody">
-<div id="bigvavdiv">
+    <div id="bigvavdiv">
+      <div id="informationbigdiv">
+        <div id="information-container"></div>
+        <div id="linkset"> <ul id="fileList"></ul></div>
+      </div>
+      
+      <div id="dropboxesdiv">
+        <div id="drop-area2"><span>Drag & Drop XML Cooling</span></div>
+        <div id="drop-area"><span>Drag & Drop CSV</span></div>
+        <div id="drop-area1"><span>Drag & Drop XML SCR</span></div>
+        <div id="drop-area3"><span>Drag & Drop XML Staged</span></div>
+      </div>
+      
+      <div id="triggerradiodiv">
+        <button id="generatevavbutton">Generate VaVs</button>
+        <div id="radioGroups"></div>
+      </div>
+      
+      <!-- Loading element -->
+      <div id="loading-element">
+        <img src="../Icon/VAyR.gif" alt="Loading..." id="loading-gif">
+        <div id="loading-text">Loading</div>
+      </div>
+      
+      
+    </div>
+  </div>
 
-<div id="informationbigdiv">
-  <div id="information-container"></div>
-  <div id="linkset"> <ul id="fileList">
-    <!-- File links will be added dynamically here -->
-  </ul></div>
-</div>
-
-  <div id="dropboxesdiv">
-    <div id="drop-area2"><span>Drag & Drop XML Cooling</span> </div>
-  
-  <div id="drop-area"><span>Drag & Drop CSV</div>
-  <div id="drop-area1"><span>Drag & Drop XML SCR</span> </div>
-  <div id="drop-area3"><span>Drag & Drop XML Staged</span> </div>
-</div>
-
-  <div id="triggerradiodiv">
-  <button id="generatevavbutton">Generate <br> VaVs</button>
-  <div id="radioGroups"></div>
+  <!-- Your script tags -->
   <script src="JS/draganddrop.js" defer></script>
-<script src="../JS/renderer.js" defer></script>
-
-
-  
-</div>
-</div>
+  <script src="../JS/renderer.js" defer></script>
 </body>
 </html>

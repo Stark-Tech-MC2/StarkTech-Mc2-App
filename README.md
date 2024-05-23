@@ -8,10 +8,4 @@ Download All dependencies:
 `npm install`  
 
 Create and Executable:  
-hiii
-<<<<<<< HEAD
-saveme
-=======
-
-testing
->>>>>>> 46ad86c3ce47761143b924b284ed2ad713d0d5ba
+powershell -ExecutionPolicy Bypass -Command "electron-packager . StarkIntegrations --platform=win32 --arch=x64 --electron-version=30.0.3 --appname StarkIntegration -all --icon=./favicon.ico --overwrite"

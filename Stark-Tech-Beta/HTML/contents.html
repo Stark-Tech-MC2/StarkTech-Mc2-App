@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stark Tech</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    
-</head>
-<body >
-    
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <nav>
-        <li class="navicon"></li>
-        <ul>
-            <li><a href="home.html">Login</a></li>
-            <li><a href="contents.html">Table Of Contents</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-         
-        </ul>
+      <li class="navicon"></li>
+      <ul>
+        <li><a href="home.html">Login</a></li>
+        <li><a href="contents.html">Table Of Contents</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
     </nav>
     <div id="loginbody">
-        <div id="contentdiv">
-            <Div><div id="contentdivtext"><span>Go to VaV Replicator</span></div><div id="contentdivbutton"><button id="myButton">Replicate</button></div></Div>
-            <Div><div id="contentdivtext"><span>Go to IO Creator</span></div><div id="contentdivbutton"><button id="gobutton">Create</button></div></Div>
-    
-</div>
-</div>
+      <div id="contentdiv">
+        <div>
+          <div id="contentdivtext">
+            <span>
+              <span id="smalltitles"> Variable Air Volume Replicator </span>
+              <br />
+              <br />
+              Automate the creation of Variable Air Volume (VAV) units using
+              data from an XML file exported from the EcoStruxure WorkStation
+              program and a CSV file. The XML file contains configuration data
+              for a template VAV, while the CSV file contains specific data for
+              multiple VAV units that need to be created. The program processes
+              both files and generates new VAV configurations in accordance with
+              the details provided in the CSV file.
+            </span>
+          </div>
+          <div id="contentdivbutton">
+            <button id="myButton">Replicate</button>
+          </div>
+        </div>
+        <div>
+          <div id="contentdivtext">
+            <span>
+              <span id="smalltitles"> Input and Output Creator </span>
+              <br />
+              <br />
+              Automate the creation of input and output (I/O) points using data
+              from an XML file exported from the EcoStruxure WorkStation program
+              and a CSV file. The XML file contains configuration data for a
+              template I/O point, while the CSV file contains specific data for
+              multiple I/O points that need to be created. The program processes
+              both files and generates new I/O point configurations in
+              accordance with the details provided in the CSV file.
+            </span>
+          </div>
+          <div id="contentdivbutton">
+            <button id="gobutton">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
-        document.getElementById('myButton').addEventListener('click', () => {
-            // Handle button click
-            window.location.href = 'VaV.html';
-        });
-        document.getElementById('gobutton').addEventListener('click', () => {
-            // Handle button click
-            window.location.href = 'IO.html';
-        });
+      document.getElementById("myButton").addEventListener("click", () => {
+        // Handle button click
+        window.location.href = "VaV.html";
+      });
+      document.getElementById("gobutton").addEventListener("click", () => {
+        // Handle button click
+        window.location.href = "IO.html";
+      });
     </script>
-</body>
+  </body>
 </html>

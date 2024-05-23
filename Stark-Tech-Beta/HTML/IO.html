@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stark Tech</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    
-</head>
-<body >
-    
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <nav>
-        <li class="navicon"></li>
-        <ul>
-            <li><a href="home.html">Login</a></li>
-            <li><a href="contents.html">Table Of Contents</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-         
-        </ul>
+      <li class="navicon"></li>
+      <ul>
+        <li><a href="home.html">Login</a></li>
+        <li><a href="contents.html">Table Of Contents</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
     </nav>
     <div id="iobotdiv">
-    <div id="informationbigdiv">
+      <div id="informationbigdiv">
         <div id="information2-container2"></div>
-        <div id="linkset"> <ul id="fileList">
-            <!-- File links will be added dynamically here -->
-          </ul></div>
+        <div id="linkset"><ul id="fileList"></ul></div>
       </div>
-    <div id="dropboxesdiv">
-        <div id="drop-areaIO"><span>Drag & Drop XML Cooling</span> </div>
-    
+      <div id="dropboxesdiv">
+        <div id="drop-areaIO"><span>Drag & Drop XML Cooling</span></div>
+      </div>
+
+      <button id="iogenerateiobutton">
+        Generate <br />
+        IO
+      </button>
+
+      <div id="radioGroups2"></div>
+      <div id="loading-element">
+        <img src="../Icon/VAyR.gif" alt="Loading..." id="loading-gif">
+        <div id="loading-text">Loading...</div>
+      </div>
+
+
     </div>
-    
-    <button id="iogenerateiobutton">Generate <br> IO</button>
-    
-    <div id="radioGroups2"></div>
-</div>
-            <script src="JS/draganddropio.js" ></script>
-            <script src="../JS/renderer.js" ></script>
-    
-</body>
+    <script src="JS/draganddropio.js"></script>
+    <script src="../JS/renderer.js"></script>
+  </body>
 </html>
