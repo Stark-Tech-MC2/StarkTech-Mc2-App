@@ -11,7 +11,21 @@ from edit_xml import edit_xml
 global script_dir
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
+def get_rightmost_part(path):
+    # Find the index of the last occurrence of either '/' or '\'
+    index = max(path.rfind('/'), path.rfind('\\'))
     
+    # If neither '/' nor '\' is found, return the original path
+    if index == -1:
+        return path
+    
+    # Otherwise, extract the substring starting from the character after '/' or '\'
+    right_part = path[index+1:]
+    
+    # Remove file extension, if any
+    filename_without_ext = os.path.splitext(right_part)[0]
+    
+    return filename_without_ext
 
 def get_data(filename,XMLFILESCR,XMLFILECOOLIN,XMLStageCooling):
     """
@@ -49,6 +63,8 @@ def get_data(filename,XMLFILESCR,XMLFILECOOLIN,XMLStageCooling):
                     OriginalAHU="AHU-XX"
                     NewAHUNAme=process_string(NewAHUNAme)
                     NewVaVName=process_string(NewVaVName)
+                    OriginalVaVName=get_rightmost_part(XMLFILECOOLIN)
+                    print('Cooling',OriginalVaVName)
                     Room = row[4]
                     # Edit the XML file
                     XMLFILE = "Template Cooling Only VAV Controlers/RP-V-5A.xml"
@@ -68,6 +84,8 @@ def get_data(filename,XMLFILESCR,XMLFILECOOLIN,XMLStageCooling):
                     OriginalAHU="AHU-XX"
                     NewAHUNAme=process_string(NewAHUNAme)
                     NewVaVName=process_string(NewVaVName)
+                    OriginalVaVName=get_rightmost_part(XMLFILESCR)
+                    print('SCR Heating',OriginalVaVName)
                     Room = row[4]
                     XMLFILE = "Template VAV SCR Controlers/RP-V4-A.xml"
                     information.append(edit_xml(NewVaVName, XMLFILESCR, OriginalAHU, OriginalVaVName, NewAHUNAme, NewMaxFlowSetpoint, NewMinFlowSetpoint, NewIntermediateFlowSetpoint, BoxCoef, heatingstage, Room))
@@ -87,6 +105,8 @@ def get_data(filename,XMLFILESCR,XMLFILECOOLIN,XMLStageCooling):
                     OriginalAHU="AHU-XX"
                     NewAHUNAme=process_string(NewAHUNAme)
                     NewVaVName=process_string(NewVaVName)
+                    OriginalVaVName=get_rightmost_part(XMLStageCooling)
+                    print('Staged Heating',OriginalVaVName)
                     Room = row[4]
                     XMLFILE = "Template VAV SCR Controlers/RP-V4-A.xml"
                     heatingstage=0
